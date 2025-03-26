@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p label="first" name="first">First Number</p>
+    <input type="number" id="firstNumber" />
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <p label="second" name="second">Second Number</p>
+    <input type="number" id = "secondNumber" />
+    <button onclick="calculate()">=</button>
+    <p label="result" name="result">Result:</p>
+    <p id="result"></p>
+
+<script>
+  function add(a, b) {
+    return a + b;
+  }
+  function subtract(a, b) {
+    return a - b;
+  }
+  function multiply(a, b) {
+    return a * b;
+  }
+  function divide(a, b) {
+    return a / b;
+  }
+  function calculate(operation) {
+    const firstNumber = parseFloat(document.getElementById('firstNumber').value);
+    const secondNumber = parseFloat(document.getElementById('secondNumber').value);
+    let result;
+    switch (operation) {
+      case '+':
+        result = add(firstNumber, secondNumber);
+        break;
+      case '-':
+        result = subtract(firstNumber, secondNumber);
+        break;
+      case '*':
+        result = multiply(firstNumber, secondNumber);
+        break;
+      case '/':
+        result = divide(firstNumber, secondNumber);
+        break;
+    }
+    document.getElementById('result').innerText = result;
+  }
+</script>
+  </body>
+</html>
