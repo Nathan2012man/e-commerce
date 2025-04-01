@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles13.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>ecommerce</title>
   </head>
   <body>
     <div class="container">
       <div
         style="
-          background-image: url(../asset/rockywithbagpack.jpg);
+          background-image: url(../assets/rockywithbagpack.jpg);
           background-size: cover;
           background-color: transparent;
           height: 140vh;
@@ -19,14 +20,14 @@
           align-items: center;
         "
       >
-        <div class="bigContainer" id="scrolled">
-          <div class="container1">
-            <nav class="goods">
+        <div class="bigNav" id="bigNav">
+          <div class="itemsNav" id="itemsNav">
+            <nav>
               <ul>
                 <li>
                   <a href="home.html"
                     ><img
-                      src="../asset/bagblack.png"
+                      src="../assets/bagblack.png"
                       alt="image of a logo cart"
                       width="20px"
                       height="20px"
@@ -40,44 +41,43 @@
               </ul>
             </nav>
           </div>
-          <div class="container2">
-            <nav class="account">
+          <div class="menuNav" id="menuNav">
+            <nav>
               <ul>
                 <li>
                   <a href="search.html"
                     ><img
-                      class="search"
-                      src="../asset/search.png"
+                      src="../assets/search.png"
                       alt="image of a search icon"
                       width="20px"
                       height="20px"
                   /></a>
                 </li>
+                <div class="cart">
                 <li>
                   <a href="cart1.html"
-                    ><img
-                      class="cart1"
-                      src="../asset/cart3.png"
-                      alt="image of a logo cart"
-                      width="20px"
-                      height="20px"
-                  /></a>
+                    ><i class="bi bi-cart-fill"></i></a>
                 </li>
+                <div class="cartAmount">
+                  0
+                </div>
                 <li>
+                  </div>
                   <a href="heart.html"
                     ><img
-                      class="heart"
-                      src="../asset/heart.png"
+                      src="../assets/heart.png"
                       alt="image of a heart"
                       width="20px"
                       height="20px"
                   /></a>
                 </li>
+                <div class="loveAmount">
+                  0
+                </div>
                 <li>
                   <a href="account.html"
                     ><img
-                      class="account"
-                      src="../asset/account.png"
+                      src="../assets/account.png"
                       alt="image of a person"
                       width="20px"
                       height="20px"
@@ -101,103 +101,21 @@
           <hr />
         </h2>
         <h5><i>Style a way to say who we are without having to speak</i></h5>
-        <div class="products" id="products">
-            
-        
-                
-        </div>
-        <script src="../script/products.js"></script>
-          <script src="../script/script.js"></script>
+        <div class="products" id="products"></div>
+        <script src="../script/duffles.js"></script>
+        <script src="../script/script.js"></script>
       </div>
       <h4>PRODUCTS</h4>
-      <div class="product2">
-        <div>
-          <a href="backpack.html"
-            ><img
-              class="product_image2"
-              src="../asset/backpack.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-        <div>
-          <a href="backpack1.html"
-            ><img
-              class="product_image2"
-              src="../asset/backpack1.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-        <div>
-          <a href="backpack2.html">
-            <img
-              class="product_image2"
-              src="../asset/backpack2.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-      </div>
-      <div class="product4">
-        <div>
-          <a href="backpack3.html">
-            <img
-              class="product_image4"
-              src="../asset/backpack3.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-        <div>
-          <a href="backpack4.html">
-            <img
-              class="product_image4"
-              src="../asset/backpack4.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-        <div>
-          <a href="toiletriesbag5.html">
-            <img
-              class="product_image4"
-              src="../asset/toiletriesbag5.JPG"
-              alt="image of a backpack"
-              width="250px"
-              height="250px"
-          /></a>
-          <br />
-          <p class="name">Bagpack 2 Gray</p>
-          <p class="price">$109.00</p>
-        </div>
-      </div>
+      <div class="products1" id="products1"></div>
+      <script src="../script/backpacks.js"></script>
+      <script src="../script/scriptbackpack.js"></script>
     </div>
+
     <div class="product3">
       <div>
         <img
           class="product_image3"
-          src="../asset/truck.png"
+          src="../assets/truck.png"
           alt="image of a delivery truck"
           width="60px"
           height="40px"
@@ -208,7 +126,7 @@
       <div>
         <img
           class="product_image3"
-          src="../asset/blackbankcard.png"
+          src="../assets/blackbankcard.png"
           alt="image of a bank card"
           width="40px"
           height="40px"
@@ -219,7 +137,7 @@
       <div>
         <img
           class="product_image3"
-          src="../asset/calender.png"
+          src="../assets/calender.png"
           alt="image of a open time"
           width="30px"
           height="30px"
@@ -230,7 +148,7 @@
       <div>
         <img
           class="product_image3"
-          src="../asset/cart3.png"
+          src="../assets/cart3.png"
           alt="image of a shopping cart"
           width="40px"
           height="40px"
@@ -241,49 +159,45 @@
     </div>
     <footer>
       <div>
-        <div class="backhome">
+        <div class="homeButton">
           <a href="home.html"
             ><img
-              src="../asset/bagwhite.webp"
+              src="../assets/cart.jfif"
               alt="image of a logo cart"
               width="20px"
               height="20px"
           /></a>
         </div>
-        <div class="footerIcons">
+        <div class="footerIcons" id="footerIcons">
           <div>
-            <p class="description">
+            <p>
               LET US HELP YOU<br />Help Center<br />Contact us<br />How o uy on
               D & B<br />Delivery timeline and fees<br />Return policy
             </p>
           </div>
           <div>
             <p>PAYENT METHODS</p>
-            <div class="payment">
+            <div>
               <img
-                class="product_image6"
-                src="../asset/visa.png"
+                src="../assets/bankcard.jfif"
                 alt="image of a bank card"
                 width="20px"
                 height="20px"
               />
               <img
-                class="product_image6"
-                src="../asset/mastercard.png"
+                src="../assets/bankcard.jfif"
                 alt="image of a bank card"
                 width="20px"
                 height="20px"
               />
               <img
-                class="product_image6"
-                src="../asset/paypal.png"
+                src="../assets/bankcard.jfif"
                 alt="image of a bank card"
                 width="20px"
                 height="20px"
               />
               <img
-                class="product_image6"
-                src="../asset/appay.png"
+                src="../assets/bankcard.jfif"
                 alt="image of a bank card"
                 width="20px"
                 height="20px"
@@ -299,29 +213,25 @@
           <div>
             <p>WE'RE FRIENDLY. FOLLOW US</p>
             <img
-              class="product_image5"
-              src="../asset/facebook.png"
+              src="../assets/bankcard.jfif"
               alt="image of a bank card"
               width="20px"
               height="20px"
             />
             <img
-              class="product_image5"
-              src="../asset/twitter.png"
+              src="../assets/bankcard.jfif"
               alt="image of a bank card"
               width="20px"
               height="20px"
             />
             <img
-              class="product_image5"
-              src="../asset/insta.png"
+              src="../assets/bankcard.jfif"
               alt="image of a bank card"
               width="20px"
               height="20px"
             />
             <img
-              class="product_image5"
-              src="../asset/tiktok.png"
+              src="../assets/bankcard.jfif"
               alt="image of a bank card"
               width="20px"
               height="20px"
@@ -331,31 +241,21 @@
       </div>
     </footer>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let scrollTop = 0;
-        window.addEventListener("scroll", function () {
-          scrollTop = window.scrollY;
-          /*document.querySelector(".counter").innerHTML = scrollTop;*/
+      document.addEventListener("scroll", () => {
+        const bigNav = document.getElementById("bigNav");
+        const itemsNav = document.getElementById("itemsNav");
+        const menuNav = document.getElementById("menuNav");
 
-          let scrolledElement = document.getElementById("scrolled");
-          if (scrollTop >= 100) {
-            scrolledElement.classList.add("scrolled-nav");
-          } else {
-            scrolledElement.classList.remove("scrolled-nav"+ "color= white");
-          }
-        });
+        if (window.scrollY > 0) {
+          bigNav.classList.add("scrolled");
+          itemsNav.classList.add("scrolled");
+          menuNav.classList.add("scrolled");
+        } else {
+          bigNav.classList.remove("scrolled");
+          itemsNav.classList.remove("scrolled");
+          menuNav.classList.remove("scrolled");
+        }
       });
-  const btn = document.getElementById("add_item");
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const item = document.createElement("p");
-        item.textContent = "Item added to cart";
-        document.body.appendChild(item);
-      });
-     const cart = document.getElementById("cart");
-      document.getElementById("btn").onclick = function add_item(){
-        const item = cart.innerText; cart.innerText=parseInt(item)+1
-      }
     </script>
   </body>
 </html>

@@ -5,6 +5,11 @@ function displayProducts() {
     console.log("Displaying products...");
     let productsContainer = 
     document.getElementById("products");
+
+    if (!productsContainer) {
+        console.error("Error: Element with ID 'products' not found.");
+        return;
+    }
   
     productsContainer.innerHTML = "";
       //Clear previous content 
@@ -19,10 +24,10 @@ function displayProducts() {
         </div>
         <div id="product-info">
         <h3>${product.name}</h3>
-        <p>${product.desc}</P>
-        <div id= "price-cart">
+        <p>${product.desc}</p>
+        <div class="priceCart" id= "priceCart">
         <p>Price: $${product.price}</p>
-        <button onclick="addToCart(${product.id})">Add to Cart</button>
+        <button onclick="addToCart('${product.id}')">Add to Cart</button>
         </div>
         </div>
         </div>
