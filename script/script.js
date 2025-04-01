@@ -20,15 +20,16 @@ function displayProducts() {
         <div id="product-info">
         <h3>${product.name}</h3>
         <p>${product.desc}</P>
+        <div id= "price-cart">
         <p>Price: $${product.price}</p>
         <button onclick="addToCart(${product.id})">Add to Cart</button>
+        </div>
         </div>
         </div>
        `;
          productsContainer.appendChild(productDiv); 
          });
         };
-         
         document.addEventListener("DOMContentLoaded", () => {
             displayProducts();
         });
