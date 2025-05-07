@@ -12,7 +12,7 @@ function displayProducts() {
     }
   
     productsContainer.innerHTML = "";
-      //Clear previous content 
+    
       products.forEach(product => {
       let productDiv = 
       document.createElement("div"); 
