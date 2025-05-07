@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div
+        style="
+          background-image: url(../assets/rockywithbagpack.jpg);
+          background-size: cover;
+          background-color: transparent;
+          height: 140vh;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <nav class="navbar" id="navbar">
+          <ul class="item-nav">
+            <li>
+              <a href="#"><i class="bi bi-bag-fill"></i></a>
+            </li>
+            <li><a href="#">DUFFLES</a></li>
+            <li><a href="#">BACKPACKS</a></li>
+            <li><a href="#">ACCESSARIES</a></li>
+            <li><a href="#">BRANDS</a></li>
+            <li><a href="#">SUPPORT</a></li>
+          </ul>
+          <div class="menu-nav">
+            <div>
+              <a href="#"
+                ><i
+                  class="bi bi-search"
+                  style="height: 50px; width: 50px;"
+                  
+                ></i
+              ></a>
+            </div>
+            <div class="cart">
+              <a href="#"
+                ><i
+                  class="bi bi-cart-fill"
+                  style="height: 50px; width: 50px"
+                ></i
+              ></a>
+              <div class="cart-amount">0</div>
+            </div>
+            <div class="heart">
+              <a href="#"
+                ><i class="bi bi-heart" style="height: 50px; width: 50px" ></i
+              ></a>
+              <div class="heart-amount">0</div>
+            </div>
+            <div>
+              <a href="#"
+                ><i
+                  class="bi bi-person-fill"
+                  style="height: 50px; width: 50px"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+        <div class="banner">
+          <h1>EVERYTHING <br />YOU NEED</h1>
+          <h3>START SELLING ONLINE BEAUTIFULLY</h3>
+          <button class="btn" type="submit" id="buy_now_btn">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section id="duffle-bags">
+      <h2>
+        New Range<br />Now In
+        <hr />
+      </h2>
+      <h5><i>Style a way to say who we are without having to speak</i></h5>
+      <div class="products" id="products"></div>
+      <script src="../js/duffles.js"></script>
+      <script src="../js/script.js"></script>
+    </section>
+    <h4>PRODUCTS</h4>
+    <section id="backpacks">
+      <div class="products1" id="products1"></div>
+      <script src="../js/backpacks.js"></script>
+      <script src="../js/scriptbackpack.js"></script>
+    </section>
+    <footer>
+      <div>
+        <div class="home-button">
+          <a href="home.html"> <i class="bi bi-bag"></i></a>
+        </div>
+        <div class="footer-icons">
+          <div>
+            <p>
+              LET US HELP YOU<br />Help Center<br />Contact us<br />How o uy on
+              D & B<br />Delivery timeline and fees<br />Return policy
+            </p>
+          </div>
+          <div>
+            <p>PAYENT METHODS</p>
+            <div>
+              <i class="bi bi-credit-card-2-back"></i>
+              <i class="bi bi-credit-card"></i>
+              <i class="bi bi-paypal"></i>
+              <i class="bi bi-wallet2"></i>
+            </div>
+          </div>
+          <div>
+            <p class="aboutus">
+              ABOUT US<br />About us<br />Testimonials<br />D & B careers<br />Terms
+              and Conditions<br />Privacy policy
+            </p>
+          </div>
+          <div>
+            <p>WE'RE FRIENDLY. FOLLOW US</p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-tiktok"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
